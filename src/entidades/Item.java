@@ -1,12 +1,19 @@
 package entidades;
 
-public class Item extends Pedido {
-	public Item(int cpf, String nome, String endereço, int numero, int data, String situacao, double valor) {
-		super(cpf, nome, endereço, numero, data, situacao, valor);
-		// TODO Auto-generated constructor stub
-	}
+public class Item {
+	
 	public int sequencial;
 	public int qntd;
+	
+	public Pedido ped;
+	
+	public Item(int sequencial, double qtd, Pedido ped, Produto prod) {
+		this.sequencial = sequencial;
+		this.qtd = qtd;
+		this.ped = ped;
+		this.prod = prod;
+		this.prod.diminuiQtdEstoque(qtd);
+	}
 		
 
 }
