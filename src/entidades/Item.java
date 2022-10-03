@@ -1,19 +1,24 @@
-package entidades;
+package entities;
+import entities.Pedido;
 
-public class Item {
+public class Item extends Pedido {
+
+	public void Pedido(int numero, Status situacao,String data, double valor) {
+		super(numero,situacao,data,valor);
+	}
 	
 	public int sequencial;
-	public int qntd;
+	public int qtd;
 	
-	public Pedido pedido;
-	
-	
-	public Item(int sequencial, double qntd, Pedido pedido, Produto prod) {
+
+		
+	public void Item(int sequencial, int qtd) {
+		
 		this.sequencial = sequencial;
-		this.qntd = qntd;
-		this.pedido = pedido;
-		this.pedido = pedido;
+		this.qtd = qtd;
+		// TODO Auto-generated constructor stub
 	}
+	
 		
 
 }

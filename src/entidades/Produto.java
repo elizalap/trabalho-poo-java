@@ -1,4 +1,4 @@
-package entidades;
+package entities;
 
 public class Produto{
 	
@@ -44,6 +44,14 @@ public class Produto{
 
 	public void setQtdEstoque(int qtdEstoque) {
 		this.qtdEstoque = qtdEstoque;
+	}
+	
+	public int adicionarQntEstoque (int qntd) {
+		return qtdEstoque += qntd;
+	}
+	
+	public int diminuirQntEstoque (int qntd) {
+		return qtdEstoque -= qntd;
 	}
 }
 
