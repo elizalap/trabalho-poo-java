@@ -2,9 +2,9 @@ package entidades;
 import java.lang.Math;
 
 public class Cliente {
-	private String cpf;
-	private String nome;
-	private String endereco;
+	public String cpf;
+	public String nome;
+	public String endereco;
 	
 	public Cliente(String cpf, String nome, String endereco) {
 		this.cpf = cpf;
@@ -18,6 +18,7 @@ public class Cliente {
 		this.nome = nome;
 		this.endereco = null;
 	}
+
 
 	/**
 	 * @return the cpf
@@ -57,8 +58,8 @@ public class Cliente {
 	/**
 	 * @param endereço the endereço to set
 	 */
-	public void setEndereço(String endereço) {
-		this.endereco = endereço;
+	public void setEndereço(String endereco) {
+		this.endereco = endereco;
 	}
 	
 

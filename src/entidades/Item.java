@@ -5,14 +5,14 @@ public class Item {
 	public int sequencial;
 	public int qntd;
 	
-	public Pedido ped;
+	public Pedido pedido;
 	
-	public Item(int sequencial, double qtd, Pedido ped, Produto prod) {
+	
+	public Item(int sequencial, double qntd, Pedido pedido, Produto prod) {
 		this.sequencial = sequencial;
-		this.qtd = qtd;
-		this.ped = ped;
-		this.prod = prod;
-		this.prod.diminuiQtdEstoque(qtd);
+		this.qntd = qntd;
+		this.pedido = pedido;
+		this.pedido = pedido;
 	}
 		
 
